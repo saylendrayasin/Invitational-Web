@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="theme-color" content="#BC8887" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Undangan</title>
+
+    <meta property="og:title" content="Undangan Khitanan Nugi - Rabu, 28 Desember 2022">
+    <meta property="og:description" content="Undangan Khitanan Nugi - Rabu, 28 Desember 2022 di Klinik Bidan Iya">
+    <meta property="og:locale" content="id_ID" />
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- Bulma Versi 0.8-->
+    <link rel="stylesheet" href="https://unpkg.com/bulma@0.8.0/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/bulma-tooltip@0.1.5/dist/bulma-tooltip.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.countdown.css" />
+    <script
+      src="https://kit.fontawesome.com/2828f7885a.js"
+      integrity="sha384-WAsFbnLEQcpCk8lM1UTWesAf5rGTCvb2Y+8LvyjAAcxK1c3s5c0L+SYOgxvc6PWG"
+      crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="js/jquery.coundown.js"></script>
+    <link rel="icon" type="image/png" href="image/Logo1.png"  />
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23064379-20"></script>
+    <!-- Begin Script for Countdown -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-23064379-20');
+    </script>
+    <!-- Begin Script for Countdown -->
+  </head>
+
+  <body>
+    <!-- Begin Preloader -->
+    <div class="preloader-wrapper">
+      <div class="preloader">
+        <img src="image/Logo1.png" alt="Flower" />
+      </div>
+    </div>
+    <!-- End Preloader-->
+    <!-- Begin Header -->
+    <div class="header-wrapper" id="home">
+      <!-- Begin Hero -->
+      <section class="hero is-large">
+        <!-- Begin Mobile Nav -->
+        <nav class="navbar is-fixed-top is-transparent is-hidden-desktop">
+          <!-- Begin Burger Menu -->
+          <div class="navbar-brand is-fixed-top">
+            <div class="navbar-burger burger" data-target="mobile-nav">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </div>
+          <!-- End Burger Menu -->
+          <div id="mobile-nav" class="navbar-menu">
+            <div class="navbar-end">
+              <div class="navbar-item">
+                <a class="navbar-item" href="#Waktu">
+                  Waktu
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#lokasi">
+                  Lokasi
+                </a>
+              </div>
+              
+              <div class="navbar-item">
+                <a class="navbar-item" href="#tentang">
+                  Tentang
+                </a>
+              </div>
+              <div class="navbar-item">
+                <a class="navbar-item" href="#rsvp">
+                  Penutup
+                </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+        <!-- End Mobile Nav -->
+        <!-- Begin Hero Content-->
+        <div class="hero-body">
+          <div class="container has-text-centered">
+            <h1 class="subtitle">Undangan Tasyakuran Khitanan</h1>
+            <h2 class="title">Anugerah Muhammad Rizky Yasin</h2>
+            <h4 class="subtitle tempatwaktu">
+                Rabu, 28 Desember 2022 
+                </br>
+                Klinik Bidan Iya, Kel. Kumersot
+                </br>
+                Kota Bitung
+            </h4>
+          </div>
+          <!-- Start Countdown -->       
+          <div>
+            <ul id="hitungmundur" >
+              <li><span class="days">00</span><p class="days_text">Hari</p></li>
+              <li class="separator">:</li>
+              <li><span class="hours">00</span><p class="hours_text">Jam</p></li>
+              <li class="separator">:</li>
+              <li><span class="minutes">00</span><p class="minutes_text">Menit</p></li>
+              <li class="separator">:</li>
+              <li><span class="seconds">00</span><p class="seconds_text">Detik</p></li>
+            </ul>
+            <div class="spasi">
+            </div>
+            <script type="text/javascript">
+              var now = new Date();
+              var day = now.getDate();
+              var month = now.getMonth() + 1;
+              var year = now.getFullYear() + 1;
+          
+              var nextyear = month + '/' + day + '/' + year + ' 07:07:07';
+              var harih = '12/28/2022 12:00:00';
+
+              $('#hitungmundur').countdown({
+                date: harih, // TODO Date format: 07/27/2017 17:00:00
+                offset: +7, // TODO Your Timezone Offset
+                day: 'Hari',
+                days: 'Hari'
+              }, function () {
+                alert('Done!');
+              });
+            </script>  
+          </div>
+          <!-- End Countdown -->
+        </div>
+        <!-- End Hero Content-->
+        <!-- Begin Hero Menu -->
+        <div class="hero-foot ">
+          <div class="hero-foot--wrapper">
+            <div class="columns">
+              <div class="column is-12 hero-menu-desktop has-text-centered">
+                <ul>
+                  <li class="is-active">
+                    <a href="#home">Home</a>
+                  </li>
+                  <li>
+                    <a href="#Waktu">Waktu</a>
+                  </li>
+                  <li>
+                    <a href="#lokasi">Lokasi</a>
+                  </li>
+                  <li>
+                    <a href="#tentang">Tentang</a>
+                  </li>
+
+                  <li>
+                    <a href="#rsvp">Penutup</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Hero Menu -->
+      </section>
+      <!-- End Hero -->
+    </div>
+    <!-- End Header -->
+
+    <!-- Begin Main Content -->
+    <div class="main-content">
+    <!-- Begin regular-section-->
+     <section class="section-light no-padding-top regular-section has-text-centered has-vertically-aligned-content" id="regular-section">
+        
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <img src="image/bismillah.png" class="bismillah has-text-centered" alt="Bismillahirrahmaanirrahiim">
+        </div>
+
+        <p class="bodytext" data-aos="fade-up" data-aos-easing="linear">
+          Assalamu'alaikum Warahmatullahi Wabarakatuh.
+          <br />
+          Dengan memohon rahmat dan ridha Allah swt, 
+          <br />
+          kami bermaksud mengundang Bapak/Ibu/Saudara/Saudari pada acara tasyakuran khitanan putra kami
+        </p>
+
+        <span class="space40px"></span>
+        <span class="space40px"></span>
+
+        <div data-aos="fade-up" data-aos-easing="linear">
+          <div class="nama-lengkap" >
+            Anugerah Muhammad Rizky Yasin
+          </div>
+           
+        </div>
+        <span class="space40px"></span>
+        <div data-aos="fade-up" data-aos-easing="linear" class="rumput">
+          <img src="image/falling_leaf_in_the_sky_with_no-removebg-preview 1.png" class="divider has-text-centered" alt="~~~">
+        </div>
+        <span class="space40px"></span>
+      </section>
+      <!-- End regular-section-->    
+      
+      <!-- Begin Waktu Section -->
+      <section class="section-dark" id="Waktu">
+        <div class="container">
+
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <h1 class="title has-text-centered section-title">Waktu</h1>
+          </div>
+          <div class="columns is-multiline" data-aos="fade-up" data-aos-easing="linear">
+            <div class="column is-3 has-vertically-aligned-content"></div>
+            <div
+              class="column is-3 has-vertically-aligned-content">
+            
+              <p class="is-larger has-text-centered">
+                  <div class="waktu tanggal-hari has-text-centered">Rabu</div> 
+                  <div class="waktu tanggal-angka has-text-centered">28</div>
+                  <div class="waktu tanggal-bulan has-text-centered">Desember 2022</div>
+              </p>
+            
+            </div>
+            <div class="column is-3 has-vertically-aligned-content">
+            
+              <p class="waktu is-larger has-text-centered">
+                Jam
+                <br>
+                <strong class="waktu-jam">12.00 WITA</strong>
+              </p> 
+
+            </div>
+            <div class="column is-3 has-vertically-aligned-content"></div>
+
+          </div>
+        </div>
+        <div class="space40px"></div>
+        <div class="main-content has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+          <a href="https://calendar.google.com/event?action=TEMPLATE&amp;tmeid=NGgzdW00NG84dXFwMzcwNXYxbGliNGxzaWggZGFlbmdkb2FuZ0Bt&amp;tmsrc=daengdoang%40gmail.com" target="_blank" class="button has-tooltip btn-cta" data-tooltip="Add to Calendar" target="_blank" data-aos="zoom-in">
+            <i class="far fa-calendar-plus"></i>
+            &nbsp;&nbsp;Google Calendar
+          </a>
+        </div>
+      </section>
+      <!-- End Waktu Content -->
+
+      <!-- Begin Lokasi Section -->
+      <section class="section-darker" id="lokasi" >
+        <div class="container">
+          <div class="column is-12 regular-section" data-aos="fade-up" data-aos-easing="linear">
+            <h1 class="title has-text-centered section-title">Lokasi</h1>
+            <p class="tempat is-larger has-text-centered">
+              <strong>Klinik Bidan Iya</strong>
+              <br>
+              Jl. Raya Manado-Bitung, Ling.02, Kumersot, 
+              <br>
+              Kec. Ranowulu, Kota Bitung, Sulawesi Utara, Indonesia
+              <br>
+            </p>
+          </div>
+          <div class="section-map" data-aos="fade-up" data-aos-easing="linear">
+            <!-- <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.481134186538!2d125.0778979!3d1.4834371!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3287073d89b3f66f%3A0xe7ce8484db08096d!2sKlinik%20Bidan%20Iya!5e0!3m2!1sen!2sid!4v1671709213632!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe> -->
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3988.481134186538!2d125.0778979!3d1.4834371!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3287073d89b3f66f%3A0xe7ce8484db08096d!2sKlinik%20Bidan%20Iya!5e0!3m2!1sen!2sid!4v1671709213632!5m2!1sen!2sid" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          </div>
+          <div class="space40px"></div>
+          <div class="has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+            <a href="https://www.google.com/maps/place/Klinik+Bidan+Iya,+Lingkungan+2,+Kumersot,+Kec.+Ranowulu,+Kota+Bitung,+Sulawesi+Utara+95538/@1.4834371,125.0778979,17z/data=!4m6!3m5!1s0x3287073d89b3f66f:0xe7ce8484db08096d!8m2!3d1.4834371!4d125.0778979!16s%2Fg%2F11tmj6y7h2?hl=en&gl=ID" class="button btn-cta" target="_blank" data-aos="zoom-in">
+              <i class="far fa-directions"></i>
+              &nbsp;&nbsp;Google Maps
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- End Lokasi Content -->
+
+      <!-- Begin Tentang Sherly and Daeng -->
+      <section class="section-light regular-section is-fullheight" id="tentang">
+        <div class="container">
+          <div class="columns is-multiline">  
+          <div class="column has-text-centered is-12 prolog">
+            <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Tentang</h1>
+            
+
+          
+          <!-- IMAGES -->  
+        <div class=" tile">
+          <div class="tile is-ancestor">
+          <div class="tile is-parent">
+            <article class="tile is-child foto1 notification foto1" data-aos="fade-up" data-aos-easing="linear">
+              <div class="content">
+                <p class="title-foto">November 2018</p>
+                <p class="subtitle-foto">
+                  Pertama kali saling kenal di <a href="https://cashbac.com" target="_blank">Cashbac</a>
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification foto2" data-aos="fade-up" data-aos-easing="linear">
+              <div class="content">
+                <p class="title-foto">
+                  Desember 2018 - Februari 2019
+                </p>
+                <p class="subtitle-foto">
+                  Satu kantor, satu divisi, dan posisi tempat duduk saling membelakangi.
+                </p>   
+              </div>            
+            </article>
+          </div>
+          <div class="tile is-parent">
+            <article class="tile is-child notification foto3" data-aos="fade-up" data-aos-easing="linear">
+              <div class="content">  
+                <p class="title-foto">
+                  Maret 2019
+                </p>
+                <p class="subtitle-foto">
+                  Cerita cinta dimulai
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+
+          <!-- IMAGES -->
+          <div class="space40px"></div>
+            <div data-aos="fade-up" data-aos-easing="linear">
+              <img src="image/falling_leaf_in_the_sky_with_no-removebg-preview 1.png" class="divider has-vertically-align" alt="~~~">
+            </div> 
+            <div class="space40px"></div>
+
+          </div>
+        </div>
+      </section>
+      <!-- End Tentang Sherly dan Daeng -->
+
+      <!-- Begin RSVP Content -->
+      <section class="section-dark contact" id="rsvp">
+        <div class="container">
+          <div class="columns is-multiline">          
+            <div class="column is-12 prolog">
+              <h1 class="title has-text-centered section-title" data-aos="fade-up" data-aos-easing="linear">Penutup</h1>
+            </div>
+            <div class="column is-12 prolog has-text-centered" data-aos="fade-up" data-aos-easing="linear">
+              <p class="h2 subtitle">
+                Merupakan suatu kehormatan dan kebahagiaan bagi kami
+                <br>
+                Apabila Bapak/Ibu/Saudara/Saudari berkenan hadir
+                dan memberikan do'a bagi putra kami.
+                <br>
+                <br>
+                Atas kehadiran dan do'anya kami ucapkan terimakasih
+                <br>
+                Semoga Allah SWT, senantiasa melimpahkan rahmat dan karunia-Nya
+                <br>
+                <br>
+                Wassalamu'alaikum Warahmatullahi Wabarakatuh.
+                <br>
+                <br> 
+                Hormat kami,
+                <br>
+                Kel. Yasin - Rembang
+              </p>
+
+              <div class="space40px"></div>
+              <div data-aos="fade-up" data-aos-easing="linear">
+                <img src="image/falling_leaf_in_the_sky_with_no-removebg-preview 1.png" class="divider has-text-centered" alt="~~~">
+              </div>
+
+            </div>
+        
+        </div>
+      </section>
+      <!-- End RSVP Content -->
+    </div>
+    <!-- End Main Content -->
+
+    <!-- Begin Footer -->
+    <div class="footer">
+      <div class="container">
+        <div class="space40px"></div>
+        <a href="https://github.com/saylendrayasin" class="has-vertically-align">
+          <p class="has-vertically-align">2022 &copy Saylendra Yasin</p>
+        </a>
+        <div class="space40px"></div>
+      </div>
+    </div>
+    <!-- End Footer -->
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/index.js"></script>
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        easing: "ease-out",
+        duration: 800,
+      });
+    </script>
+  </body>
+</html>
